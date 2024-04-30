@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    font-size: 62.5%;
+    --font: 'Dm sans', arial, helvetica, sans-serif;
+    --bg-green: #DCE9E2;
+    --primary: #00453A;
+    --gray-paragraph: #495057;
+    --gray-headline: #212529;
+}
+body {
+    background: var(--bg-green);
+    padding: 1rem 3rem;
+}
+body, a, button {
+    font: 400 1.6rem var(--font);
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+}
+header .c-logo {
+    font-weight: 400;
+}
+header .c-logo > span {
+    color: var(--primary);
+    font-weight: 700;
+}
+/* main */
+main {
+    width: 42rem;
+    margin-top: 4rem;
+}
+.c-hero__top {
+    width: 100%;
+}
+.c-top__text {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.c-top__text strong {
+    color: var(--primary);
+    text-transform: uppercase;
+}
+.c-top__text h1 {
+    font-size: 4rem;
+}
+.c-top__text p {
+    font-size: 1.7rem;
+}
