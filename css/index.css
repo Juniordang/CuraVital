@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    font-size: 62.5%;
+    --font: 'Dm sans', arial, helvetica, sans-serif;
+    --bg-green: #DCE9E2;
+    --primary: #00453A;
+    --green-btn: #00856F;
+    --gray-paragraph: #495057;
+    --gray-headline: #212529;
+}
+body {
+    background: var(--bg-green);
+    padding: 1rem 3rem;
+}
+body, a, button {
+    font: 400 1.6rem var(--font);
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+    padding: 1rem 0;
+}
+header .c-logo {
+    font-weight: 400;
+}
+header .c-logo > span {
+    color: var(--primary);
+    font-weight: 700;
+}
+/* main */
+main {
+    width: 42rem;
+    margin-top: 4rem;
+}
+.c-hero__top {
+    width: 100%;
+}
+.c-top__text {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 1.5rem;
+}
+.c-top__text strong {
+    color: var(--primary);
+    text-transform: uppercase;
+}
+.c-top__text h1 {
+    font-size: 4rem;
+    color: var(--gray-headline);
+}
+.c-top__text p {
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+    color: var(--gray-paragraph);
+}
+.c-top__button {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+}
+.c-top__button button.c-btn {
+    all: unset;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    background: var(--green-btn);
+    color: white;
+    text-transform: uppercase;
+    font: 500 1.4rem var(--font);
+    padding: 1.5rem 3rem;
+    border-radius: 3rem;
+}
+.c-top__button button.c-btn:hover {
+    background: var(--primary);
+}
+.c-btn i {
+    font-size: 1.8rem;
+}
+/* image */
+.c-hero__bottom {
+    margin-top: 5rem;
+}
+.c-hero__bottom img {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+}
