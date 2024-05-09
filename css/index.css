@@ -8,88 +8,186 @@
     --font: 'Dm sans', arial, helvetica, sans-serif;
     --bg-green: #DCE9E2;
     --primary: #00453A;
-    --green-btn: #00856F;
+    --green: #00856F;
     --gray-paragraph: #495057;
     --gray-headline: #212529;
+    --shadow: 0px 6px 7px 0px #0000000d;
 }
 body {
     background: var(--bg-green);
-    padding: 1rem 3rem;
+    width: 48rem;
 }
 body, a, button {
     font: 400 1.6rem var(--font);
 }
-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 3rem;
-    padding: 1rem 0;
+ul li {
+    list-style: none;
 }
-header .c-logo {
-    font-weight: 400;
-}
-header .c-logo > span {
-    color: var(--primary);
-    font-weight: 700;
-}
-/* main */
-main {
-    width: 42rem;
-    margin-top: 4rem;
-}
-.c-hero__top {
-    width: 100%;
-}
-.c-top__text {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    margin-bottom: 1.5rem;
-}
-.c-top__text strong {
-    color: var(--primary);
+.u-title {
+    font-size: 1.6rem;
+    font-weight: bold;
     text-transform: uppercase;
+    color: var(--green);
 }
-.c-top__text h1 {
-    font-size: 4rem;
-    color: var(--gray-headline);
-}
-.c-top__text p {
-    font-size: 1.8rem;
-    line-height: 2.5rem;
-    color: var(--gray-paragraph);
-}
-.c-top__button {
+/* button */
+.c-button {
     display: flex;
     justify-content: center;
     margin-top: 3rem;
 }
-.c-top__button button.c-btn {
+.c-button button.c-btn {
     all: unset;
     display: flex;
     align-items: center;
     gap: .5rem;
-    background: var(--green-btn);
+    background: var(--green);
     color: white;
     text-transform: uppercase;
     font: 500 1.4rem var(--font);
     padding: 1.5rem 3rem;
     border-radius: 3rem;
 }
-.c-top__button button.c-btn:hover {
+.c-button button.c-btn:hover {
     background: var(--primary);
 }
 .c-btn i {
     font-size: 1.8rem;
 }
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 4.5rem;
+    padding: 2rem 3rem 1rem;
+}
+.c-logo {
+    font-weight: 400;
+    font-size: 3rem;
+}
+.c-logo > span {
+    color: var(--primary);
+    font-weight: 700;
+}
+/* main */
+main {
+    padding-top: 2rem;
+}
+#s-hero {
+    width: 42rem;
+    margin: 0 auto;
+}
+.c-top__text {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+.c-top__text strong {
+    color: var(--primary);
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+}
+.c-top__text h1 {
+    font-size: 4rem;
+    color: var(--gray-headline);
+}
+.c-top__text p {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    color: var(--gray-paragraph);
+}
+
 /* image */
 .c-hero__bottom {
     margin-top: 5rem;
 }
 .c-hero__bottom img {
     display: block;
-    width: 100%;
+    width: 80%;
     margin: 0 auto;
+}
+/* numbers */
+.c-tableNumbers {
+    background: white;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 0 auto;
+    padding-top: 2rem;
+    border-radius: .5rem;
+    box-shadow: var(--shadow);
+}
+.c-number {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 3rem 0;
+}
+.c-number strong {
+    font-size: 5rem;
+}
+.c-number span {
+    color: var(--green);
+    font-size: 1.9rem;
+}
+/* serviços */
+#s-services {
+    background: white;
+    padding: 7rem 0 0;
+}
+#s-services .c-top {
+    text-align: center;
+    padding-bottom: 3rem;
+}
+#s-services h2 {
+    width: 31.4rem;
+    margin: 2rem auto;
+    font-size: 3rem;
+    line-height: 3.5rem;
+}
+.c-services-cards {
+    display: grid;
+    place-content: center;
+    row-gap: 2.5rem;
+    margin-top: 3rem;
+}
+.c-card {
+    width: 32.7rem;
+    border: 1px solid #DCE9E2;
+    border-radius: 1.5rem;
+    box-shadow: var(--shadow);
+    padding: 1.5rem 2rem;
+
+    display: grid;
+    row-gap: 1.7rem;
+}
+.c-card h3 {
+    font-size: 2.3rem;
+}
+.s-about-us, .s-contact {
+    background: white;
+}
+.s-about-us, .s-contact, footer {
+    padding: 0 4rem;
+}
+/* sobre nós */
+
+/* contato */
+.s-contact > .c-button {
+    justify-content: flex-start;
+    margin-top: 2rem;
+}
+.c-image {
+    width: 40rem;
+}
+/* footer */
+footer {
+    background: var(--green);
+    color: white;
+}
+footer .c-logo > span {
+    font-weight: 700;
+    color: white;
 }
