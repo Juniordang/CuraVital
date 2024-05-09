@@ -29,6 +29,13 @@ ul li {
     text-transform: uppercase;
     color: var(--green);
 }
+/* image about and contact */
+.c-image img {
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+    margin-top: 4rem;
+}
 /* button */
 .c-button {
     display: flex;
@@ -135,7 +142,7 @@ main {
 /* serviços */
 #s-services {
     background: white;
-    padding: 7rem 0 0;
+    padding: 7rem 0 10rem;
 }
 #s-services .c-top {
     text-align: center;
@@ -166,18 +173,53 @@ main {
 .c-card h3 {
     font-size: 2.3rem;
 }
+/* about e contato */
 .s-about-us, .s-contact {
     background: white;
 }
-.s-about-us, .s-contact, footer {
-    padding: 0 4rem;
-}
 /* sobre nós */
+.s-about-us {
+    padding: 10rem 4rem;
+}
+.s-about-us .c-top h2 {
+    margin-top: 1rem;
+    font-size: 3.4rem;
+    width: 35rem;
+}
+.c-content {
+    padding-bottom: 10rem;
+}
+.c-content .c-text {
+    text-align: justify;
+    line-height: 2rem;
+    font-size: 1.7rem;
+    margin-top: 2rem;
+    color: var(--gray-paragraph);
+}
 
 /* contato */
+.s-contact {
+    padding: 10rem 4rem;
+}
+.s-contact h2 {
+    font-size: 3rem;
+    width: 29.7rem;
+    margin-bottom: 4rem;
+}
+ul {
+    margin-bottom: 3rem;
+}
+ul li {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+li:first-child {
+    margin-bottom: 1.5rem;
+}
 .s-contact > .c-button {
     justify-content: flex-start;
-    margin-top: 2rem;
+    margin: 3rem 0 6rem;
 }
 .c-image {
     width: 40rem;
@@ -186,6 +228,9 @@ main {
 footer {
     background: var(--green);
     color: white;
+    padding: 4rem;
+    display: grid;
+    row-gap: 1rem;
 }
 footer .c-logo > span {
     font-weight: 700;
